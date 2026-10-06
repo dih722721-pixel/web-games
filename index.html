@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Games Arcade</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #00ffcc;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .game-card {
+            background-color: #1e1e1e;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #00ffcc;
+            box-shadow: 0 10px 15px rgba(0, 255, 204, 0.2);
+            background-color: #252525;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 Personal Web Games Arcade 🎮</h1>
+
+    <div class="grid">
+        <!-- Add your game folders below. The href matches the folder name exactly -->
+        <a class="game-card" href="./1v1lol/">1v1.lol</a>
+        <a class="game-card" href="./2048/">2048</a>
+        <a class="game-card" href="./cookie-clicker/">Cookie Clicker</a>
+        <a class="game-card" href="./DogeMiner/">Doge Miner</a>
+        <a class="game-card" href="./MonkeyMart/">Monkey Mart</a>
+        <a class="game-card" href="./basket-random/">Basket Random</a>
+        <a class="game-card" href="./basketball-stars/">Basketball Stars</a>
+        <a class="game-card" href="./bitlife/">BitLife</a>
+    </div>
+
+</body>
+</html>
